@@ -1,10 +1,10 @@
 import { useScrollAnimation, useCountUp } from "@/hooks/useScrollAnimation";
 
 const stats = [
+  { value: 4.5, suffix: "/5", label: "Clinic Rating" },
+  { value: 17, suffix: "+", label: "Google Reviews" },
   { value: 1200, suffix: "+", label: "Happy Patients" },
-  { value: 85, suffix: "+", label: "Expert Clinics" },
-  { value: 60, suffix: "+", label: "Trusted Partners" },
-  { value: 94, suffix: "%", label: "Satisfaction Rate" },
+  { value: 5, suffix: "+", label: "Years Excellence" },
 ];
 
 const StatItem = ({ value, suffix, label, isVisible }: { value: number; suffix: string; label: string; isVisible: boolean }) => {

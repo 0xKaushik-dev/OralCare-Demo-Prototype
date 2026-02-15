@@ -2,31 +2,28 @@ import { useEffect } from "react";
 import Lenis from "lenis";
 
 const SmoothScroll = () => {
-    useEffect(() => {
-        const lenis = new Lenis({
-            duration: 1.2,
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-            orientation: "vertical",
-            gestureOrientation: "vertical",
-            smoothWheel: true,
-            wheelMultiplier: 1,
-            touchMultiplier: 2,
-            infinite: false,
-        });
+  useEffect(() => {
+    const lenis = new Lenis({
+      lerp: 0.1, // Fixed linear interpolation for consistent feel
+      wheelMultiplier: 1,
+      touchMultiplier: 1.5,
+      infinite: false,
+      autoResize: true,
+    });
 
-        // @ts-ignore
-        window.lenis = lenis;
+    // @ts-ignore
+    window.lenis = lenis;
 
-        function raf(time: number) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
 
-        requestAnimationFrame(raf);
+    requestAnimationFrame(raf);
 
-        // Add CSS for Lenis
-        const style = document.createElement("style");
-        style.innerHTML = `
+    // Add CSS for Lenis
+    const style = document.createElement("style");
+    style.innerHTML = `
       html.lenis {
         height: auto;
       }
@@ -43,15 +40,15 @@ const SmoothScroll = () => {
         pointer-events: none;
       }
     `;
-        document.head.appendChild(style);
+    document.head.appendChild(style);
 
-        return () => {
-            lenis.destroy();
-            document.head.removeChild(style);
-        };
-    }, []);
+    return () => {
+      lenis.destroy();
+      document.head.removeChild(style);
+    };
+  }, []);
 
-    return null;
+  return null;
 };
 
 export default SmoothScroll;

@@ -6,22 +6,22 @@ import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from
 
 const testimonials = [
   {
-    quote: "OralCare transformed my smile completely. The team was incredibly professional and made me feel comfortable throughout.",
-    author: "Sarah Chen",
-    role: "Happy Patient",
-    company: "OralCare",
+    quote: "Dr. Deepti is very soft spoken and friendly. I had a completely painless treatment experience at Meddent.",
+    author: "Patient Review",
+    role: "Gurugram Resident",
+    company: "Meddent Clinic",
   },
   {
-    quote: "The most elegant dental solution I've ever experienced. Their attention to detail is truly remarkable.",
-    author: "Marcus Webb",
+    quote: "Excellent service quality and highly recommended by patients for any dental procedure. Truly trusted care.",
+    author: "Satisfied Patient",
     role: "Regular Client",
-    company: "OralCare",
+    company: "Meddent Clinic",
   },
   {
-    quote: "Pure craftsmanship in every single detail. My teeth whitening results exceeded all my expectations.",
-    author: "Elena Frost",
-    role: "Satisfied Patient",
-    company: "OralCare",
+    quote: "Long-term patient satisfaction (5+ years). Modern facilities and the best child dental care in Sector 6.",
+    author: "Family Patient",
+    role: "Long-term Client",
+    company: "Meddent Clinic",
   },
 ]
 

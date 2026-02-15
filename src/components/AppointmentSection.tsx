@@ -102,18 +102,18 @@ const AppointmentSection = () => {
   const contactDetails = [
     {
       icon: Clock,
-      label: "Quick Response",
-      value: "Within 24 hours"
+      label: "Working Hours",
+      value: "Open – Closes at 2:00 PM"
     },
     {
       icon: Shield,
-      label: "Dental Care",
-      value: "Personalized Plan"
+      label: "Doctor Profile",
+      value: "Dr. Deepti Monga"
     },
     {
       icon: Phone,
-      label: "Emergency",
-      value: "+1 (555) 000-0000"
+      label: "Contact Us",
+      value: "093116 41784"
     }
   ];
 
@@ -121,8 +121,8 @@ const AppointmentSection = () => {
     <section id="appointment" className="py-24 bg-background px-6">
       <div className="max-w-6xl mx-auto">
         <ContactCard
-          title="Book Your Appointment"
-          description="Ready for a perfect smile? Fill out the form below to request an appointment. Our team will get back to you to confirm the time."
+          title="Meddent Dental & Child Clinic"
+          description="Chowk, Bhim Nagar, Sector 6, Gurugram, Haryana – 122001 (F2CF+29 Gurugram). Reach out to Dr. Deepti Monga for expert care."
           contactInfo={contactDetails}
         >
           <form onSubmit={handleSubmit} className="w-full space-y-4">
@@ -149,10 +149,11 @@ const AppointmentSection = () => {
               className="w-full bg-background border rounded-xl px-5 py-3.5 outline-none focus:ring-2 focus:ring-primary/50 transition-all shadow-sm appearance-none"
             >
               <option value="">Select Service</option>
-              <option value="general">General Dentistry</option>
-              <option value="orthodontics">Orthodontics</option>
-              <option value="cosmetic">Cosmetic Dentistry</option>
-              <option value="surgery">Oral Surgery</option>
+              <option value="rct">Root Canal Treatment (RCT)</option>
+              <option value="capping">Dental Capping</option>
+              <option value="consultation">General Consultation</option>
+              <option value="painless">Painless Procedures</option>
+              <option value="child">Child Dental Care</option>
             </select>
             <div className="grid grid-cols-2 gap-4">
               <input

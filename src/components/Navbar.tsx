@@ -33,15 +33,15 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-6xl rounded-full px-6 py-3 flex items-center justify-between transition-all duration-300 ${scrolled
-          ? "bg-card/80 backdrop-blur-lg shadow-lg"
-          : "bg-card/60 backdrop-blur-md"
+        ? "bg-card/80 backdrop-blur-lg shadow-lg"
+        : "bg-card/60 backdrop-blur-md"
         }`}
     >
       <div className="flex items-center gap-2">
         <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-          <span className="text-primary-foreground font-bold text-sm font-[Sora]">O</span>
+          <span className="text-primary-foreground font-bold text-sm font-[Sora]">M</span>
         </div>
-        <span className="font-semibold text-lg font-[Sora] text-foreground">OralCare</span>
+        <span className="font-semibold text-lg font-[Sora] text-foreground">Meddent</span>
       </div>
 
       {/* Desktop */}

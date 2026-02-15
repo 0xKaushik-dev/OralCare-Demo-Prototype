@@ -14,14 +14,20 @@ const HeroSection = () => {
         <div className="max-w-2xl">
           <div className="animate-slide-up">
             <span className="inline-block bg-primary/15 text-foreground px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-              Welcome to OralCare
+              Welcome to Meddent Dental and Child Clinic
             </span>
           </div>
 
-          <h1 className="animate-slide-up-delay-1 text-5xl md:text-7xl font-bold leading-[1.1] font-[Sora] text-foreground mb-6">
-            Awesome<br />
-            <span className="text-primary">Dental</span> Care
+          <h1 className="animate-slide-up-delay-1 text-4xl md:text-6xl font-bold leading-[1.1] font-[Sora] text-foreground mb-4">
+            Meddent Dental & <br />
+            <span className="text-primary">Child Clinic</span>
           </h1>
+          <h2 className="animate-slide-up-delay-1 text-xl md:text-2xl font-semibold text-foreground/80 mb-6 font-sans">
+            मेडेंट डेंटल एंड चाइल्ड क्लिनिक
+          </h2>
+          <p className="animate-slide-up-delay-2 text-xl font-medium text-foreground mb-2">
+            Dr. Deepti Monga
+          </p>
 
           <p className="animate-slide-up-delay-2 text-muted-foreground text-lg md:text-xl max-w-lg mb-8">
             We provide the best dental care services to keep your smile bright and healthy. Experience world-class treatment.

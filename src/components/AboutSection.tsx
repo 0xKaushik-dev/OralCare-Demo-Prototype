@@ -20,13 +20,13 @@ const AboutSection = () => {
             We're Committed to Your Dental Health
           </h2>
           <p className="text-muted-foreground text-lg mb-4">
-            At OralCare, we believe that everyone deserves a beautiful, healthy smile. Our team of experienced dentists uses the latest technology to provide comprehensive dental care in a comfortable environment.
+            At Meddent Dental and Child Clinic, led by Dr. Deepti Monga, we believe that everyone deserves a beautiful, healthy smile. Our team provides comprehensive dental and specialized child care in a comfortable environment.
           </p>
           <p className="text-muted-foreground mb-8">
-            From routine check-ups to advanced cosmetic procedures, we offer a full range of dental services tailored to meet your unique needs. Your comfort and satisfaction are our top priorities.
+            From routine check-ups to advanced pediatric dentistry and cosmetic procedures, we offer a full range of services tailored to meet your family's unique needs in Gurugram.
           </p>
           <button className="inline-flex items-center gap-2 text-foreground font-medium group">
-            About OralCare
+            About Dr. Deepti Monga
             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
